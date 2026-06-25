@@ -16,3 +16,11 @@ add_executable(benchmark
   src/main.cpp
 )
 target_include_directories(benchmark PRIVATE include)
+
+add_executable(correctness
+  tests/correctness.cpp
+)
+target_include_directories(correctness PRIVATE include)
+
+enable_testing()
+add_test(NAME correctness COMMAND correctness)
