@@ -1,0 +1,10 @@
+# build artifacts
+build/
+results/*.csv
+
+# editor / OS
+.vscode/
+.DS_Store
+
+# extracted paper text (intermediate)
+paper.txt
